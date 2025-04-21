@@ -17,13 +17,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "DevMeet",
-  description: "DevMeet - Developer Knowledge Sharing Hub",
+  title: "NextWave",
+  description: "NextWave - IT Solutions",
   authors: [
-    { name: "Sushanto Kumar" },
+  
     { name: "Md Reaz Morshed" },
-    { name: "Rakib Hossen" },
-    { name: "Miftahul Jannat" },
+  
   ],
   keywords: [
     "React",

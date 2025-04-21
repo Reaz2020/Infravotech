@@ -13,9 +13,9 @@ const Footer = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5  lg:grid-cols-4 mb-4">
           <div className="">
-            <h3 className="text-3xl font-semibold text-primary mb-3 ">
-              Next<span className="font-bold text-black">Wave</span>
-            </h3>
+          <h3 className="text-4xl font-extrabold text-violet-800">
+            Next<span className="font-bold text-blue-600">Wave</span>
+         </h3>
             <p className="text-sm text-gray-700">
                  Next Wave is an IT solutions company delivering a wide range of onsite and remote technology services across Europe and Asia. We help businesses grow through tailored digital solutions, innovation, and reliable technical support.
            </p>
