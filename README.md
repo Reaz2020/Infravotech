@@ -1,6 +1,6 @@
-# DevMeet - Developer Knowledge Sharing Hub
+# Next Wave - IT solutions
 
-DevMeet is a platform where developers can share knowledge through articles, discussions, and comments. It’s a community-driven platform aimed at fostering collaboration and learning.
+Next Wave provides IT solutions across Europe and Asia, empowering developers and businesses through cutting-edge digital tools and resources.
 
 ## Clone the Repository
 
