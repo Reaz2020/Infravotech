@@ -17,12 +17,12 @@ Make sure you have the following installed:
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/Sushanto171/devmeet.git
+   git clone ...... 
    ```
 
 2. Navigate into the project directory:
    ```bash
-   cd devmeet
+   cd nextwave
    ```
 
 3. Install the required dependencies:
@@ -56,7 +56,7 @@ Make sure you have the following installed:
 Here’s a simple folder structure for a Next.js project:
 
 ```
-devmeet/
+NextWave IT/
 ├── public/                   # Static assets (images, favicon, etc.)
 │   └── favicon.ico
 ├── src/                      # Source code
