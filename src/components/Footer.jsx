@@ -9,17 +9,17 @@ const Footer = () => {
   const pathname = usePathname();
   if (!pathname.includes("dashboard")) {
     return (
-      <div className="w-11/12 mx-auto border-t border-gray-200 pt-7">
+      <div className="w-11/12 mx-auto mt-10 border-t border-gray-200 bg-white rounded-md p-6 shadow-lg pt-7">
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5  lg:grid-cols-4 mb-4">
           <div className="">
             <h3 className="text-3xl font-semibold text-primary mb-3 ">
-              Dev<span className="font-bold text-black">meet</span>
+              Next<span className="font-bold text-black">Wave</span>
             </h3>
             <p className="text-sm text-gray-700">
-              DevMeet is a platform where developers can share knowledge through
-              articles, discussions, and comments. It’s a community-driven
-              platform aimed at fostering collaboration and learning.
-            </p>
+                 Next Wave is an IT solutions company delivering a wide range of onsite and remote technology services across Europe and Asia. We help businesses grow through tailored digital solutions, innovation, and reliable technical support.
+           </p>
+
           </div>
           <div>
             <h4 className="text-black mb-3 text-lg ">Company</h4>

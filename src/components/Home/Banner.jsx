@@ -1,18 +1,18 @@
 const Banner = () => {
     return (
-        <div className="bg-linear-to-r from-secondary to-primary p-8 rounded-lg shadow-md">
-            <h1 className="text-3xl font-bold">Welcome To DevMeet</h1>
-            <p className="text-gray-600 dark:text-gray-400 mt-2">
-                Ask questions and get real answers from real people. Whether
-                you&apos;re looking for crossword answers, practical advice or
-                you&apos;ve just come for a chat, get answers to your questions.
-                To get started all you need to do is register.
-            </p>
-            <button className="mt-4 bg-black text-white px-4 py-2 rounded hover:bg-primary">
-                Create A New Account
-            </button>
-        </div>
+      <div className="bg-gradient-to-r from-blue-600 to-purple-700 p-10 rounded-2xl shadow-lg text-white">
+        <h1 className="text-4xl font-extrabold mb-3">Welcome to NextWave</h1>
+        <p className="text-lg text-white/90 mb-5 max-w-2xl">
+          Empowering businesses with cutting-edge software, AI, and web solutions.
+          From custom development to intelligent automation, NextWave is your
+          partner in digital transformation.
+        </p>
+        <button className="bg-white text-blue-700 font-semibold px-6 py-3 rounded-full shadow-md hover:bg-blue-100 transition">
+          Get Started with Us
+        </button>
+      </div>
     );
-};
-
-export default Banner;
+  };
+  
+  export default Banner;
+  
