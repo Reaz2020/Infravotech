@@ -19,11 +19,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "NextWave",
   description: "NextWave - IT Solutions",
-  authors: [
-  
-    { name: "Md Reaz Morshed" },
-  
-  ],
+  authors: [{ name: "Md Reaz Morshed" }],
   keywords: [
     "React",
     "JavaScript",
@@ -37,18 +33,31 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Iceland&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Iceland&display=swap"
+          rel="stylesheet"
+        ></link>
+      </head>
 
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-       <SessionProvider> 
-        <ThemeProvider>
-        <Navbar></Navbar>
-        <div className="min-h-[400px]">{children}</div> 
-        <Footer></Footer>
-        </ThemeProvider> 
-       </SessionProvider>
-    
+        <SessionProvider>
+          <ThemeProvider>
+            <Navbar></Navbar>
+            <div className="min-h-[400px]">{children}</div>
+            <Footer></Footer>
+          </ThemeProvider>
+        </SessionProvider>
       </body>
     </html>
   );

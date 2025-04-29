@@ -6,11 +6,11 @@ import { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import ThemeToggle from "./ThemeToggle";
 import { useSession, signIn, signOut } from "next-auth/react";
+import { SlCursor } from "react-icons/sl";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
-  const path = usePathname();
   const { data: session } = useSession();
 
   const routes = [
@@ -37,18 +37,8 @@ const Navbar = () => {
 
   if (!pathname.includes("dashboard")) {
     return (
-      <div
-        className={`my-4 ${
-          path === "/about" ? "fixed w-full z-20 top-0 " : "sticky top-4"
-        }`}
-      >
-        <div
-          className={`flex justify-between items-center max-w-[1100px] w-11/12 mx-auto ${
-            path === "/about"
-              ? "bg-white border-gray-200/35 shadow-m"
-              : "bg-white border-gray-200"
-          }  p-2.5 border rounded-full shadow-lg`}
-        >
+      <div className="mt-6">
+        <div className="flex justify-between items-center max-w-6xl  mx-auto bg-white border-gray-200 p-2.5 border rounded-2xl shadow-lg shadow-purple-100">
           <div className="lg:ml-5 flex items-center gap-2 relative">
             <RxHamburgerMenu
               onClick={() => setOpen(!open)}
@@ -68,12 +58,11 @@ const Navbar = () => {
                 ))}
               </ul>
             )}
-          <Link href="/">
-         <h3 className="text-4xl font-extrabold text-violet-800">
-            Next<span className="font-bold text-blue-600">Wave</span>
-         </h3>
-      </Link>
-
+            <Link href="/">
+              <h3 className="text-4xl font-extrabold text-violet-700 iceland">
+                Next<span className="font-bold text-gray-700">Wave</span>
+              </h3>
+            </Link>
           </div>
 
           <ul className="lg:flex items-center gap-4 hidden">
@@ -87,7 +76,6 @@ const Navbar = () => {
           </ul>
 
           <div className="flex gap-2 items-center">
-            <ThemeToggle />
             {session ? (
               <>
                 <span className="text-sm text-gray-700 hidden md:block">
@@ -95,26 +83,19 @@ const Navbar = () => {
                 </span>
                 <button
                   onClick={() => signOut()}
-                  className={`border py-1 px-3 font-semibold text-gray-800 rounded-full cursor-pointer ${
-                    path === "/about"
-                      ? "border-gray-200/35"
-                      : "border-gray-200"
-                  }`}
+                  className="border py-1 px-3 font-semibold text-gray-800 rounded-full cursor-pointer border-gray-200"
                 >
                   Sign out
                 </button>
               </>
             ) : (
               <Link
-              href="/signIn"
-              className={`border py-1 px-3 font-semibold text-gray-800 rounded-full cursor-pointer ${
-                path === "/about" ? "border-gray-200/35" : "border-gray-200"
-              }`}
-            >
-              Sign in
-            </Link>
-            
-            
+                href="/signIn"
+                className="border flex flex-row gap-2 items-center py-2 px-3 font-semibold text-gray-800 rounded-full cursor-pointer border-gray-200"
+              >
+                Let's Start
+                <SlCursor className="text-purple-800 font-bold text-xl" />
+              </Link>
             )}
           </div>
         </div>
