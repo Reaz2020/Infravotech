@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
-import { connectDB } from "@/utils/db";
+//import { connectDB } from "@/utils/db";
 import { User } from "@/model/user-model";
-import { PasswordResetToken } from "@/model/password-reset-model";
+//import { PasswordResetToken } from "@/model/password-reset-model";
 import bcrypt from "bcryptjs";
 
 export async function POST(req) {
