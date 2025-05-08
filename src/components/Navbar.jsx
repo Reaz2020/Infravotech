@@ -58,20 +58,12 @@ const Navbar = () => {
                 ))}
               </ul>
             )}
-<<<<<<< HEAD
-            <Link href="/">
-              <h3 className="text-4xl font-extrabold text-violet-700 iceland">
-                Next<span className="font-bold text-gray-700">Wave</span>
-              </h3>
-            </Link>
-=======
           <Link href="/">
          <h3 className="text-4xl font-extrabold text-violet-800">
             Next<span className="font-bold text-blue-600">Tech</span>
          </h3>
       </Link>
 
->>>>>>> d1e6146 (updated)
           </div>
 
           <ul className="lg:flex items-center gap-4 hidden">
