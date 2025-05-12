@@ -5,7 +5,7 @@ import { User } from "@/model/user-model";
 import crypto from "crypto";
 
 //import { PasswordResetToken } from "@/model/password-reset-token-model";
-import { PasswordResetToken } from "@/model/password-reset-token-model";
+//import { PasswordResetToken } from "@/model/password-reset-token-model";
 
 
 // ✅ Added Resend import
