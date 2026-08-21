@@ -97,8 +97,8 @@ const ServiceList = () => {
 
             <ServiceCard
            
-                link="/services/crm"
-               backgroundImage="/servicesImage/crm-sol.png"
+                link="/services/crm2.png"
+               backgroundImage="/servicesImage/crm2.png"
             />
 
         </div>
