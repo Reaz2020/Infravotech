@@ -10,7 +10,7 @@ export default function Home() {
       <Banner />
 
       {/* main content */}
-      <main className="grid grid-cols-1 md:grid-cols-12 gap-6">
+      <main className="grid grid-cols-1 md:grid-cols-12 gap-6 ">
         <section className="col-span-12">
           {/* Service Cards */}
 

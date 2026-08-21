@@ -1,22 +1,60 @@
-import { FaDesktop, FaMobileAlt, FaServer, FaCog } from "react-icons/fa";
+import {
+    FaDesktop,
+    FaMobileAlt,
+    FaServer,
+    FaCog,
+    FaCreditCard,
+    FaUsers,
+} from "react-icons/fa";
 
-const ServiceCard = ({ title, description, icon, link }) => {
+const ServiceCard = ({
+    title,
+    description,
+    icon,
+    link,
+    backgroundImage,
+}) => {
     return (
-        <div className="p-6 rounded-lg shadow-md mb-4 border-l-2 border-orange-500">
-            <div className="flex items-center space-x-2">
-                <span className="font-bold text-pink-500">{title}</span>
-            </div>
-            <div className="text-center mt-4">
-                <div className="text-4xl text-primary">{icon}</div>
-            </div>
-            <p className="text-gray-600 mt-2">{description}</p>
-            <div className="mt-4">
-                <a
-                    href={link}
-                    className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800"
-                >
-                    Learn More
-                </a>
+        <div
+            className="
+                relative
+                h-[350px]
+                rounded-xl
+                shadow-md
+                overflow-hidden
+                bg-cover
+                bg-center
+                bg-no-repeat
+                transition-transform
+                duration-300
+                ease-in-out
+                hover:scale-[1.02]
+            "
+            style={{
+                backgroundImage: `url("${backgroundImage}")`,
+            }}
+        >
+            {/* Dark Overlay */}
+            <div className="absolute inset-0 " />
+
+            {/* Content */}
+            <div className="relative z-10 h-full p-6 flex flex-col ">
+                {/* Title */}
+                <h3 className="font-bold text-xl text-orange-400">
+                    {title}
+                </h3>
+
+                {/* Icon */}
+                <div className="mt-6 text-4xl text-white">
+                    {icon}
+                </div>
+
+                {/* Description */}
+                <p className="text-gray-200 mt-5 leading-relaxed">
+                    {description}
+                </p>
+
+       
             </div>
         </div>
     );
@@ -25,36 +63,44 @@ const ServiceCard = ({ title, description, icon, link }) => {
 const ServiceList = () => {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
             <ServiceCard
-                title="Web Design "
-                description="We create visually appealing and user-friendly website designs that capture your brand's identity."
-                icon={<FaDesktop />}
+               
+               
                 link="/services/web-design"
+                backgroundImage="/servicesImage/card-image.png"
             />
+
+     
+
             <ServiceCard
-                title="Web Development"
-                description="Our web development services ensure that your website is functional, responsive, and fast."
-                icon={<FaDesktop />}
-                link="/services/web-development"
-            />
-            <ServiceCard
-                title="Mobile App Development"
-                description="We design and develop mobile applications that provide seamless user experiences."
-                icon={<FaMobileAlt />}
+              
                 link="/services/mobile-app-development"
+                 backgroundImage="/servicesImage/mobile-app.png"
             />
+
             <ServiceCard
-                title="IT Technical Services"
-                description="We offer expert IT solutions for setting up and maintaining office IT infrastructure and systems."
-                icon={<FaServer />}
+              
                 link="/services/it-technical-services"
+                backgroundImage="/servicesImage/web-developer.png"
             />
+
             <ServiceCard
-                title="Office Setup & IT Equipment"
-                description="Get your office equipped with the latest IT hardware and network setup for optimal productivity."
-                icon={<FaCog />}
-                link="/services/office-setup"
+           
+               backgroundImage="/servicesImage/ui-design.png"
             />
+
+            <ServiceCard
+            
+              backgroundImage="/servicesImage/cloud-sol.png"
+            />
+
+            <ServiceCard
+           
+                link="/services/crm"
+               backgroundImage="/servicesImage/crm-sol.png"
+            />
+
         </div>
     );
 };
