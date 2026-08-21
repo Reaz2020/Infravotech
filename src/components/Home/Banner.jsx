@@ -31,8 +31,7 @@ const Banner = () => {
         <h1 className="text-4xl font-extrabold mb-3">Welcome to NextWave</h1>
         <p className="text-lg text-black mb-5">
           Empowering businesses with cutting-edge software, AI, and web
-          solutions. From custom development to intelligent automation, NextWave
-          is your partner in digital transformation.
+          solutions. From custom development to intelligent automation,n.
         </p>
         <button className="bg-white text-blue-800 font-semibold px-6 py-3 rounded-full shadow-md cursor-pointer transition">
           Get Started with Us
