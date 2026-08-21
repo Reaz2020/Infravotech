@@ -20,7 +20,7 @@ const Banner = () => {
       {/* Background Image Layer */}
       <div
         className="absolute inset-0 bg-cover bg-center filter grayscale rounded-2xl"
-        style={{ backgroundImage: "url('/banner.jpg')" }}
+        style={{ backgroundImage: "url('/hero.png')" }}
       ></div>
 
       {/* Overlay Gradient */}
