@@ -4,6 +4,7 @@ import { FiPlus, FiSearch } from "react-icons/fi";
 import Container from "@/components/Container";
 import { useState } from "react";
 
+
 const CommunityPage = () => {
     const [searchQuery, setSearchQuery] = useState("");
     const [selectedTag, setSelectedTag] = useState("");
